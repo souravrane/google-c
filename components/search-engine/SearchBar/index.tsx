@@ -1,4 +1,3 @@
-import { EventHandler } from "react";
 import styles from "./SearchBar.module.css";
 
 const SearchBar = () => {
