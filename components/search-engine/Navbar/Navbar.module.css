@@ -34,4 +34,11 @@
   padding: 10px;
   margin-right: 16px;
   display: flex;
+  align-items: center;
+}
+
+.left_links {
+  padding: 10px;
+  margin-left: 10px;
+  align-items: center;
 }
