@@ -1,4 +1,5 @@
 import styles from "./SearchBar.module.css";
+import textData from "@data/search/search.json";
 
 const SearchBar = () => {
   const onSearch = (e: any) => {
@@ -46,8 +47,8 @@ const SearchBar = () => {
           </div>
         </div>
         <div className={styles.button_section}>
-          <button type="submit"> Google Search</button>
-          <button type="button">I'm Feeling Lucky</button>
+          <button type="submit">{textData.primarySubmit}</button>
+          <button type="button">{textData.secondarySubmit}</button>
         </div>
       </form>
     </div>
