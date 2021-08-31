@@ -1,13 +1,22 @@
-import React from "react";
+import React ,{useEffect} from "react";
 import {useRouter} from 'next/router'
-
 import { FaSistrix, FaMicrophone } from "react-icons/fa";
+import * as ls from 'local-storage';
+
 const Home = (props) => {
   const router = useRouter()
   const [state, setState] = React.useState("");
+
+  useEffect(() => {
+    ls.remove('searchItem')  
+  }, [])
+
   const searchGoogle = (e) => {
+    e.preventDefault();
+    ls.set('searchItem',state);
     router.push("/search");
   };
+
   return (
     <div className="home">
       <div className="home__container">
