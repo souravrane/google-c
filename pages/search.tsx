@@ -5,7 +5,9 @@ import axios from "axios";
 import * as ls from 'local-storage';
 import ShowResults from "../components/search-engine/ShowResults";
 
-const Search = ({key,cx}) => {
+const key = "AIzaSyAeNzkBbauzHueUM6JRfGbUiBd6nvsShhI"
+const Search = ({cx}) => {
+
   const router = useRouter();
   const goBack = () => {
     router.push("/");
@@ -86,6 +88,6 @@ export async function getServerSideProps() {
     const key = process.env.KX
     const cx = process.env.CX
   
-    return { props: { key,cx } }
+    return { props: { cx } }
 }
   
