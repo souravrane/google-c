@@ -5,7 +5,7 @@ export const Search = () => {
   return (
     <div>
       Search
-      <Links></Links>
+      <Links />
     </div>
   );
 };
